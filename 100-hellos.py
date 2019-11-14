@@ -29,8 +29,8 @@ def recordTime(startTime):
 	try:
 
 		with open( 'execution-time.txt', 'a') as exFile:
-			# round by 3 decimal places
-			executionTime = str( round( ( time.time() - startTime ), 3) )
+			# round by 10 decimal places
+			executionTime = str( round( ( time.time() - startTime ), 10) )
 			exFile.write(executionTime + '\n')
 
 	except:

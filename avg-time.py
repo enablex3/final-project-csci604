@@ -13,9 +13,9 @@ except Exception as exception:
 	print(exception)
 	quit()
 
-# calculate the average execution time
-avgTime = round( sum( executionTimes ) / len( executionTimes ), 6 )
+# calculate the average execution time, convert seconds to microseconds
+avgTime = round( sum( executionTimes ) / len( executionTimes ) * 1000000, 3 )
 
 # print the result
-print( 'Average execution time: {} seconds.'.format( str( avgTime ) ) )
+print( 'Average execution time: {} microseconds.'.format( str( avgTime ) ) )
 
