@@ -39,7 +39,7 @@ def recordTime(startTime):
 		recordTime(startTime)
 
 # 100 threads
-threads = 100
+threads = 10000
 
 for t in range( 0, threads ):
 	threading.Thread( target = helloWorld ).start()
