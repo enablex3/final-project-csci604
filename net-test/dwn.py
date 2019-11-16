@@ -10,7 +10,12 @@ print('(1) A 200MB file')
 print('(2) A 512MB file')
 print('(3) A 1GB file')
 
-choice = str(raw_input('Enter your choice: '))
+try:
+    # python 2
+    choice = str(raw_input('Enter your choice: '))
+except:
+    # python 3
+    choice = str(input('Enter your choice: '))
 
 # 3 links for testing. 200MB file a 512MB file and a 1GB file
 link1 = 'http://ipv4.download.thinkbroadband.com/200MB.zip'
