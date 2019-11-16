@@ -25,10 +25,10 @@ print('{}us to create {} files.'.format(str(endWrite), str(n)))
 
 startDelete = time.time()
 
-for k in range(1, n + 1):
+"""for k in range(1, n + 1):
     
     # delete the file
-    os.remove('file-{}.txt'.format(str(k)))
+    os.remove('file-{}.txt'.format(str(k)))"""
 
 endDelete = time.time() - startDelete
 endDelete = round((endDelete * 1000000), 3)
