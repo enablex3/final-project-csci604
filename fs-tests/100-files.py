@@ -3,10 +3,10 @@
     Elijah Reyes
     CSCI 604 """
 
-import time. os
+import sys, time, os
 
 try:
-    n = sys.argv[1]
+    n = int(sys.argv[1])
 except:
     print('Please inlcude number of files. EX: 100-files.py 20')
     quit()
