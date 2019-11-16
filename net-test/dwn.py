@@ -24,11 +24,11 @@ link3 = link1.replace('200', '512')
 
 startTime = time.time()
 if choice == '1':
-    wget(link1)
+    wget.download(link1)
 elif choice == '2':
-    wget(link3)
+    wget.download(link3)
 elif choice == '3':
-    wget(link2)
+    wget.download(link2)
 else:
     print('there is no option {}'.format(choice))
     quit()
