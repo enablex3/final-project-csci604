@@ -1,0 +1,10 @@
+To ping test for Windows and Linux...
+
+ping <ip_address>
+
+If you want to limit how many pings on Linux...
+
+ping -c <num> <ip_address>
+
+Windows will ping 3 times by default.
+Linux will ping until the end of time without the "-c" switch.
