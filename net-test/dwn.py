@@ -6,9 +6,9 @@ import wget, time
 
 print('                       This test will run once...')
 print('Choose one of the options to download:')
-print('(1) A 200MB file')
-print('(2) A 512MB file')
-print('(3) A 1GB file')
+print('(1) A 100MB file')
+print('(2) A 1GB file')
+print('(3) A 10GB file')
 
 try:
     # python 2
@@ -17,18 +17,18 @@ except:
     # python 3
     choice = str(input('Enter your choice: '))
 
-# 3 links for testing. 200MB file a 512MB file and a 1GB file
-link1 = 'http://ipv4.download.thinkbroadband.com/200MB.zip'
-link2 = link1.replace('200MB', '1GB')
-link3 = link1.replace('200', '512')
+# 3 links for testing.
+link1 = 'http://speed.hetzner.de/100MB.bin'
+link2 = 'http://speed.hetzner.de/1GB.bin'
+link3 = 'http://speed.hetzner.de/10GB.bin'
 
 startTime = time.time()
 if choice == '1':
     wget.download(link1)
 elif choice == '2':
-    wget.download(link3)
-elif choice == '3':
     wget.download(link2)
+elif choice == '3':
+    wget.download(link3)
 else:
     print('there is no option {}'.format(choice))
     quit()
